@@ -37,4 +37,4 @@ Se você deseja contribuir para melhorar este projeto, siga estas etapas:
 
 Se precisar de ajuda ou tiver sugestões, entre em contato com Lucas em lucas2013sales@hotmail.com.
 
-Agradecemos por usar o nosso site de bilhetes da família! Divirta-se nos jogos!
+Agradeço por conferir o nosso site de bilhetes da família!

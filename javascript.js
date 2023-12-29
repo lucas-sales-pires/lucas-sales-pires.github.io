@@ -1,13 +1,13 @@
-const td = document.querySelectorAll("td");
+const td = document.querySelectorAll("td"); 
 let numerosSorteados = [];
 
 td.forEach((numero) => {
     numero.addEventListener("click", () => {
         if (numerosSorteados.length < 6) {
 
-            if (numero.classList) numero.classList.toggle("toggle");
+            numero.classList.toggle("toggle")
 
-            if (numero.classList.contains("toggle") && numerosSorteados.length < 6) {
+            if (numero.classList.contains("toggle")) {
                 numerosSorteados.push(numero.textContent);
             } else {
                 numerosSorteados = numerosSorteados.filter((num) => num !== numero.textContent);
@@ -69,7 +69,7 @@ const jogadores = [
         ]
     }];
 function verificarAcertos() {
-    lista = [];
+    let lista = [];
 
     if (numerosSorteados.length === 6) {
         for (const jogador of jogadores) {
@@ -77,9 +77,8 @@ function verificarAcertos() {
 
             const bilhetesOrdenados = jogador.bilhetes.slice();
 
-            bilhetesOrdenados.sort((a, b) => contarAcertos(b.numeros) - contarAcertos(a.numeros));
-            let resultadoElement = document.getElementById("resultado");
-            resultadoElement.innerText = `Número Sorteado: ${numerosSorteados}`;
+            let resultado = document.getElementById("resultado");
+            resultado.innerText = `Número Sorteado: ${numerosSorteados}`;
             bilhetesOrdenados.forEach((bilhete) => {
                 const numAcertos = contarAcertos(bilhete.numeros);
 
@@ -129,4 +128,5 @@ function verificarAcertos() {
 function contarAcertos(numerosEscolhidos) {
     return numerosEscolhidos.filter(numero => numerosSorteados.includes(String(numero))).length;
 }
+
 

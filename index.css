@@ -1,13 +1,14 @@
-body {
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #4CAF50; 
-
-
-
 }
 
 .botao {
@@ -28,10 +29,14 @@ body {
 
 .container {
     text-align: center;
-    width: 90%;
     min-width: 300px;
 }
-
+form {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+}
 th,
 td {
     text-align: left;
@@ -99,7 +104,8 @@ p {
     }
 
     table {
-        width: 95%;
+        width: 100%;
+        margin: auto;
     }
     caption{
         font-size: 2.5rem;

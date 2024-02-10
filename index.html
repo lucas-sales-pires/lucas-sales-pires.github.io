@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Quais números foram sorteados ?</title>
+    <title> Escolha seus números</title>
     <link rel="stylesheet" href="index.css">
 </head>
 
@@ -13,7 +13,8 @@
         <div class="container">
             <form>
                 <table>
-                    <caption><img src="trevo.jpg">Mega Da Virada</caption>
+                    <caption>
+                        <img src="trevo.jpg">Mega Da Virada</caption>
                     
                         <tr>
                             <td>1</td>
@@ -91,9 +92,9 @@
                         <td>58</td>
                         <td>59</td>
                         <td>60</td>
-                    </tr>
+                    </tr><button type="button" onclick="verificarAcertos()" class="botao">Adicionar Jogo</button>
                 </table>
-                <button type="button" onclick="verificarAcertos()" class="botao">Adicionar Jogo</button>
+                
             </form>
             <table id="tabelaResultados">
                 <button type="button" id = "voltar" class="botao">Voltar</button>
